@@ -65,9 +65,9 @@
   FacebookAPI.promise();
 })(jQuery, window);
 
-function renderFB() {
-  FacebookAPI.done(function () {
-    FB.XFBML.parse();
+function renderFB(element) {
+  FacebookAPI.done(function (element) {
+    FB.XFBML.parse(element);
   });
 }
 

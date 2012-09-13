@@ -19,7 +19,7 @@ define([
       },
       toggleShowPictures: function(){
         this.model.showPictures();
-      },
+      }
       // Provide data to the template
 //      serialize: function() {
 //        return this.model.toJSON();
@@ -109,7 +109,7 @@ define([
             model: item
           }));
         },this);
-        if(manage != undefined)  {
+        if(manage !== undefined)  {
         //  return manage(this).render();
         }
       },
@@ -138,7 +138,7 @@ define([
           console.log("adding item view: " + item.id);
           this.insertView(new Views.Picture({
            serialize: item,
-           model : item,
+           model : item
          })).render();
        }, this);
 
@@ -146,7 +146,7 @@ define([
             console.log('changing collection');
          this.render();
         }, this);
-      },
+      }
     });
 
     Views.Albums = Backbone.View.extend({
@@ -165,7 +165,7 @@ define([
             model: item
           }));
         },this);
-        if(manage != undefined)  {
+        if(manage !== undefined)  {
         //  return manage(this).render();
         }
       },
@@ -186,7 +186,7 @@ define([
           console.log("adding item view: " + item.id);
           this.insertView(new Views.Item({
            serialize: item,
-           model : item,
+           model : item
          })).render();
        }, this);
 
@@ -194,7 +194,7 @@ define([
             console.log('changing collection');
          this.render();
         }, this);
-      },
+      }
 
     });
 

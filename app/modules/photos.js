@@ -62,7 +62,7 @@ function(app, Backbone, Views) {
 
       return response.data;
     }
-  })
+  });
 
   Photos.Albums = Backbone.Collection.extend({
     model: Photos.AlbumModel,
@@ -72,7 +72,7 @@ function(app, Backbone, Views) {
 
       return _.filter(response.data,function(item){return item.count !== undefined;});
     }
-  })
+  });
 
 
   // Photos Views
