@@ -12,13 +12,14 @@ require.config({
 
     // Libraries.
     jquery: "../assets/js/libs/jquery",
-    jqueryColor: "../assets/js/libs/jquery.color",
     lodash: "../assets/js/libs/lodash",
     backbone: "../assets/js/libs/backbone",
     facebookApi: "../assets/js/libs/facebookApi",
     appConfigs: "../assets/js/libs/appConfigs",
 
-
+    // JQuery Plugings
+    jqueryUi: "../assets/js/libs/jquery-ui-1.8.23.custom.min",
+    jqueryColor: "../assets/js/libs/jquery.color",
     iScroll: "../assets/js/libs/iscroll",
     jcrop: "../assets/js/libs/jquery.Jcrop"
   },
@@ -32,6 +33,10 @@ require.config({
 
     facebookApi: {
       deps: ["jquery","appConfigs"]
+    },
+
+    jqueryUi: {
+      deps: ["jquery"]
     },
 
     jqueryColor: {

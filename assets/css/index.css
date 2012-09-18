@@ -1,8 +1,12 @@
 /* H5BP styles. */
 @import "../vendor/h5bp/css/style.css";
+
+/* JQuery UI styles. */
+@import "../vendor/jqueryui/ui-lightness/jquery-ui-1.8.23.custom.css";
+
 @import "./jquery.Jcrop.css";
 
-/* Add Stylus stylesheets here, alll files ending in .styl will be compiled!
+/* Add Stylus stylesheets here, all files ending in .styl will be compiled!
  * For example: @import "main.styl";
  *
  * Note: All stylesheets are relative to `assets/css`.
@@ -24,3 +28,43 @@
   font-family: 'Century Gothic W01';
 }
 
+
+.squarePic
+{
+        vertical-align: middle;
+        max-width: 100px;
+        max-height: 100px;
+        display: -moz-inline-box; /* Firefox 2 */
+        display: inline-block;
+}
+
+
+.selectList ul {
+  list-style:none;
+  display:block;
+  /*float:left;
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  text-align:left;*/
+}
+
+.selectList li {
+ /* -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  box-sizing:border-box;
+  display:block; 
+  /*float:left;*
+  width:300px; height:100px;
+  text-align:center;
+  font-family:georgia;
+  font-size:12px;
+  line-height:140%;*/
+}
+
+.selected {
+  background-color:yellow;
+
+}

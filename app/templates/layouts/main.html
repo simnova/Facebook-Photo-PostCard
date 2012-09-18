@@ -1,17 +1,33 @@
 <div class="fb-login-button" scope="user_photos">Login with Facebook</div> to start
 
 <div id="postcardapp">
-  <div  style="display:inline-block; vertical-align:top">
-    <h3>Albums:</h3>
-    <div class="albums selectList" id="albumList"></div>
-  </div>
 
-  <div style="display:inline-block; vertical-align:top">
-    <h3>Photos:</h3>
-    <div class="pictures selectList" id="pictureList"></div>
-  </div>
+  <div id="preview"></div>
 
-  <div class="cropper"></div>
+  <div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+    <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+      <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#tabs-cans">Styles</a></li>
+      <li class="ui-state-default ui-corner-top"><a href="#tabs-photos">Photos</a></li>
+    </ul>
+
+    <div id="tabs-cans">
+      Styles
+    </div>
+
+    <div id="tabs-photos">
+      <div  style="display:inline-block; vertical-align:top">
+        <h3>Albums:</h3>
+        <div class="albums selectList" id="albumList"></div>
+      </div>
+
+      <div style="display:inline-block; vertical-align:top">
+        <h3>Photos:</h3>
+        <div class="pictures selectList" id="pictureList"></div>
+      </div>
+
+      <div class="cropper"></div>
+    </div>
+  <div>
 
 </div>
 <footer>

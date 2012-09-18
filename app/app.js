@@ -7,7 +7,9 @@ define([
   "appConfigs",
 
   // Plugins.
-  "plugins/backbone.layoutmanager"
+  "plugins/backbone.layoutmanager",
+  "jqueryColor",
+  "jqueryUi"
 ],
 
 function($, _, Backbone,FacebookApi,AppConfigs) {

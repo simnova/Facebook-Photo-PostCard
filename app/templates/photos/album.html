@@ -1,4 +1,6 @@
 <div class="album">
-  <div class="thumbnail"><img height="100px" src="https://graph.facebook.com/<%= coverPhoto %>/picture/?access_token=<%= accessToken %>"/></div>
+  <div class="thumbnail">
+    <div style="width:100px;height:100px;background:url(https://graph.facebook.com/<%= coverPhoto %>/picture/?type=album&access_token=<%= accessToken %>) no-repeat;"></div>
+  </div>
   <div class="description"><%= name %></div>
 </div>

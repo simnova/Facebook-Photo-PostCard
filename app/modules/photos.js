@@ -34,6 +34,10 @@ function(app, Backbone, Views) {
     }
   });
 
+  Photos.CropModel = Backbone.Model.extend({
+
+  });
+
   Photos.AlbumModel = Backbone.Model.extend({
     parse: function(album){
       return {
@@ -48,8 +52,18 @@ function(app, Backbone, Views) {
     },
     showPictures: function(){
       console.log("show pictures");
-      app.dispatcher.trigger("showPictures",this.get("id"));
+          var albumId = this.get("id");
+          var morePictures = new Photos.Pictures();
+          morePictures.url = 'https://graph.facebook.com/'+ albumId + '/photos/?access_token=' + window.FB.getAccessToken();
+          morePictures.fetch().done(function(){
+              // set the album id
+              _.each(morePictures.models,function(model){model.set("albumId",albumId)});
+
+              app.dispatcher.trigger("showPictures",morePictures);
+          });
     }
+
+
   });
 
   Photos.Pictures = Backbone.Collection.extend({
